@@ -1,10 +1,10 @@
 extern crate image;
 
 pub mod image_reader {
-    use super::image::{GenericImageView, Pixels, DynamicImage, ImageError};
+    use super::image::{DynamicImage, GenericImageView, ImageError, Pixels};
 
     pub struct ImageReader {
-        image: DynamicImage
+        image: DynamicImage,
     }
 
     impl ImageReader {

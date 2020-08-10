@@ -1,7 +1,7 @@
 extern crate image;
 
 pub mod image_pixel {
-    use super::image::{Pixel, Rgba, Rgb};
+    use super::image::{Pixel, Rgb, Rgba};
 
     // The maximum sum for the RGB channels for a pixel
     const SUM_MAX: u16 = (255 + 1) * 3;

@@ -8,15 +8,11 @@ pub mod histogram {
 
     impl<'a> HistogramWriter<'a> {
         pub fn new(name: &'a str, data: &'a Vec<u32>) -> HistogramWriter<'a> {
-            HistogramWriter {
-                name,
-                data,
-            }
+            HistogramWriter { name, data }
         }
 
         pub fn draw(&self, path: &str) -> Result<(), Box<dyn std::error::Error>> {
-            let root =
-                BitMapBackend::new(path, (1200, 800)).into_drawing_area();
+            let root = BitMapBackend::new(path, (1200, 800)).into_drawing_area();
 
             root.fill(&WHITE)?;
 

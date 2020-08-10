@@ -1,10 +1,10 @@
-mod image_reader;
-mod image_pixel;
 mod histogram_writer;
+mod image_pixel;
+mod image_reader;
 
-use crate::image_reader::image_reader::ImageReader;
-use crate::image_pixel::image_pixel::ImagePixel;
 use crate::histogram_writer::histogram::HistogramWriter;
+use crate::image_pixel::image_pixel::ImagePixel;
+use crate::image_reader::image_reader::ImageReader;
 use std::collections::HashMap;
 
 // The path to the image
